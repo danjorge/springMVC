@@ -42,6 +42,9 @@
 						Usuário: ${usuario.username }
 					</a>
 				</li>
+				<li class="nav-item">
+     				<a href="<c:url value="/logout" />">Sair</a></span>
+ 				</li>
 			</ul>
 		</div>
 		<!-- /.navbar-collapse -->
