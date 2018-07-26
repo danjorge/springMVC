@@ -30,6 +30,7 @@
 		<link href="${contextPath}resources/css/guia-do-programador-style.css" rel="stylesheet" type="text/css"  media="all"  />
 	    <link href="${contextPath}resources/css/produtos.css" rel="stylesheet" type="text/css"  media="all"  />
 		<link rel="canonical" href="http://www.casadocodigo.com.br/" />	
+		<link href="${contextPath}resources/css/book-collection.css" rel="stylesheet" type="text/css" media="all" />
 	</head>
 
 	<body class="${bodyClass }">
@@ -40,7 +41,7 @@
 
 		<jsp:invoke fragment="extraScripts"></jsp:invoke>
 
-	<%@include file="/WEB-INF/views/rodape.jsp" %>
+		<%@include file="/WEB-INF/views/rodape.jsp" %>
 
 	</body>
 </html>

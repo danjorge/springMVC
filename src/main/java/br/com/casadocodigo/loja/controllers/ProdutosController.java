@@ -39,6 +39,7 @@ public class ProdutosController {
 	}
 	
 	@RequestMapping("/form")
+	@CacheEvict(value="produtosHome", allEntries=true)
 	public ModelAndView form(Produto produto) {
 		ModelAndView modelAndView = new ModelAndView("/produtos/form");
 		modelAndView.addObject("tipos", TipoPreco.values());
@@ -66,6 +67,7 @@ public class ProdutosController {
 	}
 	
 	@RequestMapping(method=RequestMethod.GET)
+	@CacheEvict(value="produtosHome", allEntries=true)
 	public ModelAndView listar() {
 		List<Produto> produtos = produtoDAO.listar();
 		ModelAndView modelAndView = new ModelAndView("produtos/lista");
